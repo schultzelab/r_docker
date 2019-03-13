@@ -32,6 +32,9 @@ RUN pip install umap-learn==0.3.7
 # install virtualenv for tensorflow
 RUN pip install virtualenv
 
+# install leidenalg
+RUN pip install leidenalg==0.7.0
+
 # install cran packages
 ADD install_cran.R /tmp/
 RUN R -f /tmp/install_cran.R
